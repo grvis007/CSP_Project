@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<html>
+<head><title>StoreManager Login Page</title>
+ 
+		
+		<link rel="stylesheet" href="styl.css" type="text/css" />
+		
+</head>		
+ <body bgcolor="#E6E6FA">
+ <center>
+
+ <form method="post" action="LoginServlet">
+ <h3>Login As Store Manager</h3>
+ <table cellpadding='2' cellspacing='1'>
+    <tr>
+        <td>User ID</td>
+        <td><input type="TEXT" size="15" name="userid" required></input></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="PASSWORD" size="15" name="password"/ required></td>
+    </tr>
+	<tr>
+        <td>User Type</td>
+        <td><input type="TEXT" class="btn1" size="15" name="usertype" value="storemanager" readonly></input></td>
+    </tr>
+    <tr>
+        <td colspan='2'>
+            <center><input class="btn" type="submit" value="Login" /></center>
+        </td>
+    </tr>
+ </table>
+ </form>
+
+ </center>
+ </body>
+</html>

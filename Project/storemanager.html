@@ -1,0 +1,47 @@
+<html>
+	<head>
+	<title>
+		Create Account
+	</title>
+	
+		
+		<link rel="stylesheet" href="styl2.css" type="text/css" />
+	</head>
+	<body>
+	<h1>Welcome</h1>
+	<div class="form1">
+		<form method="get" action="addProduct" >
+			ItemId:<br/><br/>  <input type="text" name="itemId" required><br/>
+			Item Name:<br/><br/>  <input type="text" name="itemName" required><br/>
+			Item Price:<br/><br/> <input type="text" name="itemPrice" required><br/>
+			Item Type:<br/><br/> <input type="text" name="itemType" required><br/>
+			Manufacturer Rebate:<br/><br/> <input type="text" name="manufacturerRebate" required><br/>
+			Retailer's Discount:<br/><br/> <input type="text" name="retailerDiscount" required><br/>
+			Image Path:<br/><br/> <input type="text" name="imagePath" required><br/>
+			<br/>
+			<input class="btn" type="submit" value="Add Product" >
+		</form> 	
+	</div>	
+		<div class="form2">
+		<form method="get" action="deleteProduct" >
+			ItemId:<br/><br/>  <input type="text" name="itemId" required><br/>
+			
+			<br/>
+			<input class="btn" type="submit" value="Delete Product" >
+		</form> 
+		</div>
+		<div class="form3">
+		<form method="get" action="updateProduct.jsp" >
+			ItemId:<br/><br/>  <input type="text" name="itemId" required><br/>
+			Item Name:<br/><br/> <input type="text" name="itemName" required><br/>
+			Item Price:<br/><br/> <input type="text" name="itemPrice" required><br/>
+			Item Type:<br/><br/> <input type="text" name="itemType" required><br/>
+			Manufacturer Rebate:<br/><br/> <input type="text" name="itemRebate" required><br/>
+			Retailer's Discount:<br/><br/> <input type="text" name="itemDiscount" required><br/>
+			Image Path:<br/><br/> <input type="text" name="imagePath" required><br/>
+			<br/>
+			<input class="btn" type="submit" value="Update Product" >
+		</form> 	
+		</div>		
+	</body>
+</html>
