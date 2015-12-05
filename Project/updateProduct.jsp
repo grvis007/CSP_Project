@@ -10,7 +10,6 @@
 		<%@page import="java.io.IOException"%>
 		<%@page import="java.util.*"%>
 		<%@page import="java.io.*"%>
-		<link rel='stylesheet' href='styl5.css' type='text/css' />
 	</head>
 	<body>
 	<%
@@ -20,31 +19,30 @@
 		String itemPrice = request.getParameter("itemPrice");
 		String manufacturerRebate = request.getParameter("itemRebate");
 		String retailerDiscount = request.getParameter("itemDiscount");
-		String imagePath = request.getParameter("imagePath");
 		
 		MongoClient mongo;
 		mongo = new MongoClient("localhost", 27017);
 									
 		// If database doesn't exists, MongoDB will create it for you
-		DB db = mongo.getDB("CSP595DB");
+		DB db = mongo.getDB("Tutorial_3");
 		
 		// If the collection does not exists, MongoDB will create it for you
-			DBCollection Products = db.getCollection("Products");
+			DBCollection products = db.getCollection("products");
 			//System.out.println("Collection products selected successfully");
 			BasicDBObject searchQuery = new BasicDBObject();
 			searchQuery.put("itemid", itemId);
-			Products.remove(searchQuery);
+			products.remove(searchQuery);
 			
 				
-			BasicDBObject doc = new BasicDBObject("title", "Products").
+			BasicDBObject doc = new BasicDBObject("title", "products").
 				append("itemid", itemId).
 				append("itemname", itemName).
 				append("itemprice", itemPrice).
 				append("itemtype", itemType).
 				append("manufacturerrebate", manufacturerRebate).
-				append("retailerdiscount", retailerDiscount).
-				append("imagepath", imagePath);					
-			Products.insert(doc);
+				append("retailerdiscount", retailerDiscount);
+									
+			products.insert(doc);
 	
 	
 	%>

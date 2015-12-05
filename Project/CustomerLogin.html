@@ -1,36 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
 
 <html>
-<head><title>Customer Login Page</title>
+<head><title>StoreManager Login Page</title>
  
 		
-		<link rel="stylesheet" href="styl.css" type="text/css" />
+		<link rel="stylesheet" href="sty9.css" type="text/css" />
 		
 </head>		
- <body bgcolor="#E6E6FA">
+ <body>
  <center>
-  <form method="post" action="LoginServlet">
-  <h3>Login As Customer</h3>
-  <table cellpadding='2' cellspacing='1'>
-    <tr>
-        <td>User ID</td>
-        <td><input type="TEXT" size="15" name="userid" required></input></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td><input type="PASSWORD" size="15" name="password"/ required></td>
-    </tr>
-	<tr>
-        <td>User Type</td>
-        <td><input type="TEXT" class="btn1" size="15" name="usertype" value="customer" readonly></input></td>
-    </tr>
-    <tr>
-        <td colspan='2'>
-            <center><input class="btn" type="submit" value="Login" /></center>
-        </td>
-    </tr>
- </table>
- </form>
+
+ 
+ <h3>Login As Customer</h3>
+
+		
+		
+	</head>
+	<body>
+	<h1></h1>
+		<form method="post" action="LoginServlet">
+		<table>
+		<tr>
+			<td>User Id:</td><td><input type="TEXT" size="15" name="userid" required></td></tr>
+		<tr>	
+			<td>Password:</td><td><input type="PASSWORD" size="15" name="password" required></td></tr>
+		<tr>	
+			<td>User Type:</td><td><input type="TEXT" class="btn1" size="15" name="usertype" value="customer" readonly></td></tr>
+		</table>	
+			<br/>
+			<input class="btn" type="submit" value="Login" />
+		</form> 	
+	</body>
+</html>
 
  </center>
  </body>

@@ -18,27 +18,32 @@ public class soccer extends HttpServlet {
 		
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		response.setContentType("text/html");
+		
 		out.println("<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><title>Chicago Art Shop</title><link rel='stylesheet' href='styl5.css' type='text/css' /><link rel='stylesheet' href='styl3.css' type='text/css' /></head>");
 		out.println("<body>");
 		out.println("<div id='container'>");
 		out.println("<header >");
-		out.println("<h1>Chicago Art Shop</a></h1><h4>Best Art in best price</h4>");
-		out.println("<span ><ul class=''><li class=''><a href=''><img src='images/cart2.png'></a></li><li class=''><a href='#'></a></li><li class=''><a href='help.html'>Help</a></li></ul></span></header>");
+		out.println("<h1>Chicago Art Shop</a></h1><h3>Best Art in best price</h3>");
+		out.println("<span ><ul class=''><li class=''><a href=''></a></li><li class=''><a href='#'></a></li><li class=''><a href='help.html'></a></li></ul></span></header>");
 		out.println("<nav>"+
     	"<ul>"+
         	"<li class=''><a href='homepage1.html'>Home</a></li>"+
             "<li class=''><a href='Todaydeal'>Todays Deal</a></li>"+
-			"<li class='text'>"+
-                            
-			"<div id='tfheader'>"+
-			"<form id='tfnewsearch' method='get' action='http://www.google.com'>"+
-		        "<input type='text' class='tftextinput' name='q' size='70' maxlength='120'><input type='submit' value='search' class='tfbutton'>"+
-			"</form>"+
-			"<div class='tfclear'></div>"+
-			"</div>"+
-														
-			"</li></ul></nav>");
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href=''></a></li>"+
+			"<li class=''><a href='TrackOrder.html'>Track Order</a></li>"+
+            "<li class=''><a href='help.html'>Help</a></li>"+               
+			"<li class=''><a href=''><img src='images/cart2.png'></a></li>"+											
+			"</li></ul></nav>");	
 			
 			//"<li class=''><a href='login.html'>Sign In</a></li><li class=''><a href='register.html'>Create Account</a></li></ul></nav>");	   
 			   

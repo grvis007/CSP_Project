@@ -80,7 +80,7 @@ public class proceedToCheckout extends HttpServlet {
 			out.println("Total Amount:");
 			out.println(total);
 			out.println("<hr/>");
-			out.println("<form method='get' action='placeOrder'><table><tr><td>Name:</td><br/><br/><td><input type='text' name='customerName'></td></tr><tr><td>Address:</td><td><input type='text' name='address'></td></tr><tr><td>Credit Card Number:</td><td><input type='text' name='card'></td></tr><tr><td>Phone No.:</td><td><input type='text' name='phone'></td></tr><tr><td></td><td><input type='submit' class='btn' value='Place Order'></td></tr></table></form>");
+			out.println("<form method='get' action='placeOrder'><table><tr><td>Name:</td><br/><br/><td><input type='text' name='customerName'></td></tr><tr><td><br/>Address:</td><td><input type='text' name='address'></td></tr><tr><td><br/>Credit Card Number:</td><td><input type='text' name='card'></td></tr><tr><td><br/>Phone No.:</td><td><input type='text' name='phone'></td></tr><tr><td></td><br/><td><br/><br/><input type='submit' class='btn' value='Place Order'></td></tr></table></form>");
 			//out.println("<form action='/Assignment1/console.html'><input type='submit' value='Add More Items'></form>");
 			//out.println("<form method='get' action='proceedToCheckOut'><input type='submit' value='Proceed to Checkout'></form>");
 			out.println("</div>");

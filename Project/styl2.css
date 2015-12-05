@@ -10,6 +10,7 @@ h1 {
 	font-style: oblique;
 	font-variant: small-caps;
 	font-weight: bold;
+	color:white;
 	
 }
 h4 {
@@ -21,7 +22,7 @@ h4 {
 	
 }
 body{
-	background-image:url(cart.jpg);
+	background-image:url(back.jpg);
 	text-align:center;
 	
 	

@@ -589,5 +589,15 @@
         <url-pattern>/autocomplete</url-pattern>
     </servlet-mapping>
 
+<servlet>
+        <servlet-name>Todaydeal</servlet-name>
+        <servlet-class>Todaydeal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Todaydeal</servlet-name>
+        <url-pattern>/Todaydeal</url-pattern>
+    </servlet-mapping>
+
+
 
 </web-app>
