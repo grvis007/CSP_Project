@@ -1,0 +1,1 @@
+<BODY onLoad="alert('Product updated successfuly!'); window.location.href = 'manageProducts.jsp';">
